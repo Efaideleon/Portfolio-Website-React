@@ -1,0 +1,81 @@
+/* Header Styles */
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 0) 100%);
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    margin-left: 10px
+}
+
+.header-content a {
+    text-decoration: none;
+}
+
+.header-content h1 {
+    margin: 0 0 15px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.header-content p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: transparent;
+    color: white;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 0 20px;
+    padding: 5px 10px;
+    background-color: transparent;
+    border-radius: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.navbar ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}

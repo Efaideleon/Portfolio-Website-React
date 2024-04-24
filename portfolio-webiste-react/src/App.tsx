@@ -1,14 +1,40 @@
 import './App.css'
-import ProjectCard from './components/project_card/ProjectCard'
-ProjectCard
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { Navbar } from "./components/navbar/Navbar"
+import { Home } from "./components/home/Home"
+import { Contact } from "./components/contact/Contact"
 
 function App() {
 
+  const cardsData =
+    [
+      {
+        title: 'Project Title',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        image: "./boat-webp-animated.webp",
+        link: "https://www.google.com"
+      },
+      {
+        title: 'Project Title',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        image: "./boat-webp-animated.webp",
+        link: "https://www.google.com"
+      },
+      {
+        title: 'Project Title',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        image: "./boat-webp-animated.webp",
+        link: "https://www.google.com"
+      }
+    ]
   return (
-    <>
-    <div>Test Project Card</div>
-    <ProjectCard/>
-    </>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home data={cardsData} />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
