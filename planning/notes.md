@@ -181,3 +181,8 @@
   * It seems `Redux` is a common solution that is suggested
   * For the most part have the parent fetch the data and use React Context to pass it to the child. 
     * This makes the childe for reusable, and simple since it's only in charge of display that UI
+* Now we have to handle data fetching.
+  * Make an excel file with columns: title, description, image, link, export that as CSV and then fetch it from a custom hook component in the App Component
+    * done, maybe move hooks to hooks directory?
+* Might look into using react context/redux to pass that data to Home component
+  * That will make the website a bit more advanced
