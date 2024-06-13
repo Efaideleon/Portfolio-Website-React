@@ -186,3 +186,30 @@
     * done, maybe move hooks to hooks directory?
 * Might look into using react context/redux to pass that data to Home component
   * That will make the website a bit more advanced
+* Assets are not being included in the "dis" folder when running npm run deploy
+
+* **4/26/24**
+* **Remarks**
+* This notes should be copied and moved to learning_resources
+* Work will continue in the `Portfolio-Website` directory from Job Search Github Repo
+
+* **Notes**
+* The assets needed to be in a assets directery in the `public` folder
+* The routers need to have the correct path for the live url that is "/Portfolio-Website/" in this case
+* Also the paths for the images, etc should be relative to index.html in the dist folder for it to work in the Live URL
+* Still need to make things more modular, and make the card clickable
+* And figure out why the blur effect is laggy.
+* redirect to anoter page within the same website import Link from "react-router-dom"
+* The point of using react Context is to make the application depend on something global, but if that thing doesn't exists it will handle the error by displaying something else to the user
+* Redux Setup: action.js, reduces.js, store.js
+  * No Longer using redux.
+* **Trying to fix the blur effect**
+* applying `will-change: transform` to the .inner class in css
+* **Framer motion**
+* Framer motion is about using a motion value then using a transform to change that value, and then passing that value to the style property in a motion.div component
+* using the `as CSSProperties` in a motion.div => style property, allows to pass values to custom variable in css, like `--x: 0`.
+* When animating a component and the components within that comonent consider using a useState varialbe and passing to the children comoponents as a prop
+* animate can take use lambda expression to go from one value to another
+
+* **Animating Description**
+* Maybe we'll have certain key words pop up when a card is highlighted
